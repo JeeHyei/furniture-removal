@@ -6,7 +6,12 @@ from datetime import datetime
 import tensorflow as tf
 from keras.models import Model
 from keras.models import load_model
+from tensorflow.keras.optimizers import Adam # - Works
+from tensorflow.keras.optimizers import adam # - Does not work
+from keras.optimizers import Adam            # - Does not work
+from keras.optimizers import adam  
 from keras.optimizers import Adam
+
 from keras.layers import Input, Conv2D, UpSampling2D, Dropout, LeakyReLU, BatchNormalization, Activation, Lambda
 from keras.layers.merge import Concatenate
 from keras.applications import VGG16
