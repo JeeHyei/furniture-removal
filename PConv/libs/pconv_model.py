@@ -9,7 +9,7 @@ from keras.layers import Input, Conv2D, UpSampling2D, Dropout, LeakyReLU, BatchN
 from keras.layers.merge import Concatenate
 from keras.applications import VGG16
 
-from tensorflow.keras import backend as K
+from tensorflow.python.keras import backend as K
 from keras.utils.multi_gpu_utils import multi_gpu_model
 
 from .pconv_layer import PConv2D
